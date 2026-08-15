@@ -43,7 +43,10 @@ venv.bak/
 *~
 
 # Data and Logs
-data/
+# El contenido de data/ no se versiona (parquets pesados y ficheros derivados),
+# pero sí su README, que documenta qué debe haber en la carpeta.
+data/*
+!data/README.md
 *.parquet
 *.csv
 *.sqlite
