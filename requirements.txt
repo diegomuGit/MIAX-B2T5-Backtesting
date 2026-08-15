@@ -1,7 +1,12 @@
-numpy
-pandas
-yfinance
-matplotlib
-seaborn
-scipy
-pyarrow
+# Dependencias de la práctica.
+# El enunciado restringe las librerías permitidas a las siete siguientes:
+# NumPy, pandas, yfinance, Matplotlib, Seaborn, SciPy y pyarrow.
+# JupyterLab / Notebook es solo el runtime de ejecución y se instala aparte.
+
+numpy>=1.24
+pandas>=2.0,<3.0   # <3.0: los notebooks usan freq="BM", eliminado en pandas 3
+yfinance>=0.2.40
+matplotlib>=3.7
+seaborn>=0.13
+scipy>=1.7         # >=1.7: linregress expone intercept_stderr (p-valor del alpha)
+pyarrow>=14.0
